@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Registration and Login Form</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+          <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    </head>
+<body>
+    <!-- main home section -->
+    <section id="main-home">
+        <!-- header -->
+        <header>
+            <div class="container-fluid">
+                <div class="header-top d-flex justify-content-between ">
+                    <div class="d-flex justify-content-between px-2">
+                        <div class="item px-2">
+                            <p>Follow Us:</p>
+                        </div>
+                        <div class="item px-2">
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="item px-2">
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="item px-2">
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="item px-2">
+                            <p><i class="fas fa-phone-alt"></i>+975 17529581</p>
+                        </div>
+                        <div class="item px-2">
+                            <p><i class="fas fa-map-marker-alt"></i>Tashigang, Bhutan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                    {# <a class="navbar-brand" ><h1><img src="{% static 'images/lo.jpg' %}" height="30" width="30">Oi Pizza<br><strong><i>Delicous</i></strong></a></h1> #}
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <h2 align="center">Welcome to our pizza site</h2>
+                     </div>
+                  </nav>
+                 </div>
+                 </header>
+                </section>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 class="text-primary">Registration & Login Form</h3>
+        <hr style="border-top:1px dotted #000;"/>
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>

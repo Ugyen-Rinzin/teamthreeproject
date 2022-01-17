@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- owl carouselCnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <title>Pizza</title>
+</head>
+<body>
+   
+    <!-- main home section -->
+    <section id="main-home">
+        <!-- header -->
+        <header>
+            <div class="container-fluid">
+                <div class="header-top d-flex justify-content-between ">
+                    <div class="d-flex justify-content-between px-2">
+                        <div class="item px-2">
+                            <p>Follow Us:</p>
+                        </div>
+                        <div class="item px-2">
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="item px-2">
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="item px-2">
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="item px-2">
+                            <p><i class="fas fa-phone-alt"></i>+975 17529581</p>
+                        </div>
+                        <div class="item px-2">
+                            <p><i class="fas fa-map-marker-alt"></i>Tashigang, Bhutan</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 navigation-wrap">
+                    <a class="navbar-brand" ><h1><img src="{% static 'images/lo.jpg' %}" height="30" width="30">Oi Pizza<br><strong><i>Delicous</i></strong></a></h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/home">Home </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/contact">Contact Us</a>
+                          </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="/orderpizza">Order</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/booktable">BookTable</a>
+                          </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="/login">Log-Out</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+            <!-- carousel slider -->
+            <div id="banner-slider" class="pt-5">
+                <div class="container-fluid">
+                    <div class="owl-carousel owl-theme">
+                        <!-- slide1 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <div class="pl-5">
+                                    <h4>Spicy Pizza</h4>
+                                    <h1>The <span class="color-pink">Spicy Pizza</span></h1>
+                                    <p class="py-2">A thin and crispy crust topped off with Dalay chillies,Mozzarella ,tomato sauce(all home made) and bellpeppers</p>
+                                   <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <img src="{% static 'images/slider-1.jpg' %}" alt="">
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <!-- slide2 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <div class="pl-5">
+                                    <h4>Vigor Pizza</h4>
+                                    <h1>The <span class="color-pink">Vigor Pizza</span></h1>
+                                    <p class="py-2">The complete madness pack for our fellow meat lovers. A thin crusted pizza topped off with various meat starting from Salami,Beef jerky,Bacon,Bratwurst and eggs mixed and topped off on top of our homemade tomato sauce and garlic with a pinch of spanich</p>
+                                <!-- Button trigger modal -->
+                                   <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <img src="{% static 'images/slider-2.jpg' %}" alt="">
+                            </div>
+                            </div>
+                            
+                        </div>
+                         <!-- slide3 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <div class="pl-5">
+                                    <h4>Burger Pizza</h4>
+                                    <h1>The <span class="color-pink">Burger Pizza</span></h1>
+                                    <p class="py-2">Inspired by the italian <em>Stromboli</em> is a thick crusted butter garlic with juicy stuffings which comes in two types slowly baked. Veg and Non Veg</p>
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <img src="{% static 'images/slider-3.jpg' %}" alt="">
+                            </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- carousel slider End -->
+        </header>
+        <!-- header end -->
+    </section>
+     <!-- end main home section -->
+     <br><br><br><br>
+     <!-- gallery section -->
+     <section id="explore-food">
+         <div class="explore-food-wrapper">
+             <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm 12">
+                            <div class="text-content text-center">
+                                <h2>Pizza Galley</h2>
+                                <p>A slice a day keeps the sad away.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-1.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Eggs Benedict Pizaa</h5>
+                                    <p>The Egg came first when it comes to our Eggs Benedict Pizza.</p>
+                                     <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">A pizza for our egg fanitics</li>
+                                     <li class="list-group-item">Price: nu.449</li>
+                                     <li class="list-group-item">Preperation time : 25 minutes</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-2.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Mexican Green Wave Pizaa</h5>
+                                    <p>Theres always time and space for a little of ema dhatshe pizza right</p>
+                                    <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">Ema dhatshe is life right?</li>
+                                     <li class="list-group-item">Price: nu 399</li>
+                                     <li class="list-group-item">Preperation time : 25 minues</li>
+                                     </ul>
+                              <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-10.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Hawaiian Pizaa</h5>
+                                    <p>Hawai in Bhutan(Beleive it or taste it).</p>
+                                    <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">Your very own Hawai in your mouth</li>
+                                     <li class="list-group-item">Price: nu 449</li>
+                                     <li class="list-group-item">Preperation time : 30 minues</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-9.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Paneer Curry Pizza</h5>
+                                    <p>Paneer in Pizza? Where have you been all my life!</p>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Curry and Paneer and pizza = <3</li>
+                                     <li class="list-group-item">Price : nu449</li>
+                                     <li class="list-group-item">Preperation time : 30 minutes</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-5.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Salsa Pizza</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Inspired by the Mexican Salasa is the Salsa Pizza</li>
+                                     <li class="list-group-item">Price : nu 399</li>
+                                     <li class="list-group-item">Preperation time : 25 minutes</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-6.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Garlic Salami Pizaa</h5>
+                                    <p>Garlic and salami always a pair to eat out with</p>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Salami topped off with the oozingly juicy garlic</li>
+                                     <li class="list-group-item">Price : nu399</li>
+                                     <li class="list-group-item">Preperation time: 25 minutes</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-7.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Margherita Pizza</h5>
+                                    <p>The Original Pizza all the way from Italy</p>
+                                    <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">The Neapolitan fastfood called "PIZZA"</li>
+                                     <li class="list-group-item">Price : nu.399</li>
+                                     <li class="list-group-item">Preperation time: 25minutes</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-8.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Fishy Wishy Pizaa</h5>
+                                    <p>The marine life packs quite the punch when it enteres your mouth</p>
+                                    <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">The battle between the seafoods</li>
+                                     <li class="list-group-item">Price : nu.499</li>
+                                     <li class="list-group-item">Preperation time : 35 minutes</li>
+                                     </ul>
+                                <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                            <div class="card bordered">
+                                <img src="{% static 'images/pizza-9.png' %}" class="img-fluid">
+                                <div class="p-3">
+                                    <h5>Barbecue Chicken Pizaa</h5>
+                                    <p>Love is in the air. No wait its the Barbecue Chicken Pizza</p>
+                                    <ul class="list-group list-group-flush">
+                                     <li class="list-group-item">Well Barbecued Chicken on a Pizza</li>
+                                     <li class="list-group-item">Price : 499</li>
+                                     <li class="list-group-item">Preperation time: 35 minutes</li>
+                                     </ul>
+                                 <!-- Button trigger modal -->
+                                    <a class="nav-link" href="/orderpizza"><button type="button" class="main-btn mt-3" data-toggle="modal" data-target="#exampleModal"> Order Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--gallery section end-->
+    <!-- Footer -->
+<div class="footer">
+    <hr>
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+    <hr>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-home mr-3"></i>Thimphu, Bhutan</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3"></i>pizza45@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3"></i> + 0975 17529581</p>
+            </li>
+          </ul>
+          </div>
+           <div class="col-md-9 col-lg-9 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Location</h5>
+          <hr>
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14186.715236600565!2d91.50505651639149!3d27.260601102198187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1syounphula!5e0!3m2!1sen!2sbt!4v1639839818012!5m2!1sen!2sbt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"class="embed-responsive-item"></iframe>
+        </div>
+        </div>
+  </div>    
+    </footer>
+    <!-- Footer -->
+  
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+          <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
